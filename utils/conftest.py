@@ -1,6 +1,13 @@
 import pytest
 import requests
+import random
+import time
 from config import *
+from faker import Faker
+
+from models.user_dto import User
+
+fake = Faker()
 
 
 @pytest.fixture(scope="session")
@@ -11,8 +18,22 @@ def registration_url():
 def login_url():
     return BASE_URL + API_VERSION + LOGIN_URL
 
+
 @pytest.fixture(scope="session")
 def session():
     s = requests.Session()
     yield s
     s.close()
+
+
+@pytest.fixture(scope="function")
+def random_user():
+    username = f"qa_{int(time.time())}_{fake.email()}"
+    password = fake.password(
+        length=random.randint(8, 15),
+        special_chars=True,
+        digits=True,
+        upper_case=True,
+        lower_case=True,
+    )
+    return User(username=username, password=password)
