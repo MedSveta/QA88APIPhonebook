@@ -32,3 +32,24 @@ class TestRegistration:
         assert response.status_code in [400, 409]
         assert "User already exists" in response.json().values()
 
+    @pytest.mark.parametrize("invalid_email", [
+        "vbgyt123.tby.bnj",
+        "bnhjyu78@",
+        "@gmail.com",
+        "dfgrt678@gmail",
+        "fgvty56@@ghyu.vbh",
+        "fgth67 @cvg.bn",
+    ])
+    def test_registration_negative_invalid_email(self, session, registration_url, invalid_email):
+        user = User(invalid_email, "Qwerty123$")
+        body = {
+            "username": user.username,
+            "password": user.password,
+        }
+        headers = {
+            "Content-Type": "application/json",
+        }
+        session.post(registration_url, json=body, headers=headers)
+        response = session.post(registration_url, json=body, headers=headers)
+        print(response.json())
+        assert response.status_code == 400
