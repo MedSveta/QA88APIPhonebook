@@ -37,3 +37,10 @@ def random_user():
         lower_case=True,
     )+"$"
     return User(username=username, password=password)
+
+@pytest.fixture(scope="function")
+def registered_user(session, registration_url, random_user):
+    user_data = {
+        "username": random_user.username,
+        "password": random_user.password,
+    }
