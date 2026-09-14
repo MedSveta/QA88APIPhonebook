@@ -44,3 +44,7 @@ def registered_user(session, registration_url, random_user):
         "username": random_user.username,
         "password": random_user.password,
     }
+    response_reg = session.post(registration_url, json=user_data)
+    if response_reg.status_code == 200:
+        return random_user
+    return User(TEST_EMAIL, TEST_PASSWORD)
