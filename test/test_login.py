@@ -1,4 +1,6 @@
+import pytest
 
+from config import *
 
 class TestLogin:
 
@@ -11,3 +13,17 @@ class TestLogin:
         response = session.post(login_url, json=body, headers=headers)
         assert response.status_code == 200
         assert "token" in response.json().keys()
+
+    @pytest.mark.parametrize("invalid_username", [
+        "",
+        "dfrty678@rty.bn"
+    ])
+    def test_login_negative(self, session, login_url, invalid_username):
+        body = {
+            "username": invalid_username,
+            "password": TEST_PASSWORD,
+        }
+        response = session.post(login_url, json=body)
+        print(response.json())
+        assert response.status_code in [401, 403]
+        assert "Login or Password incorrect" in response.json().values()
