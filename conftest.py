@@ -5,6 +5,7 @@ import time
 from config import *
 from faker import Faker
 
+from models.contact_dto import Contact
 from models.user_dto import User
 
 fake = Faker()
@@ -18,6 +19,9 @@ def registration_url():
 def login_url():
     return BASE_URL + API_VERSION + LOGIN_URL
 
+@pytest.fixture(scope="session")
+def add_contact_url():
+    return BASE_URL + API_VERSION + ADD_CONTACT_URL
 
 @pytest.fixture(scope="session")
 def session():
@@ -49,3 +53,31 @@ def registered_user(session, registration_url, random_user):
     if response_reg.status_code == 200:
         return random_user
     return User(TEST_EMAIL, TEST_PASSWORD)
+
+@pytest.fixture(scope="function")
+def auth_token(session, registration_url, random_user):
+    user_data = {
+        "username": random_user.username,
+        "password": random_user.password,
+    }
+    response= session.post(registration_url, json=user_data)
+    assert response.status_code == 200, (
+        f"Failed registration {response.status_code} {response.text}"
+    )
+    return response.json()["token"]
+
+@pytest.fixture(scope="function")
+def auth_header(auth_token):
+    return {"Authorization": auth_token}
+
+
+@pytest.fixture(scope="function")
+def random_contact():
+    return Contact(
+        name=fake.name(),
+        lastName=fake.last_name(),
+        email=fake.email(),
+        phone=fake.numerify("#" * random.randint(10, 15)),
+        address=fake.address()[:50],
+        description=fake.text(max_nb_chars=200),
+    )

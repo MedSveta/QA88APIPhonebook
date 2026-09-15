@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638cedc1-5e84-47e2-838c-c3befda27ecd" name="Changes" comment="Login Tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="638cedc1-5e84-47e2-838c-c3befda27ecd" name="Changes" comment="Login Tests Negative">
+      <change afterPath="$PROJECT_DIR$/models/contact_dto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_contacts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_login.py" afterDir="false" />
     </list>
@@ -51,6 +53,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for test.test_login.TestLogin.test_login_negative.executor": "Run",
+    "Python tests.Python tests for test.test_login.TestLogin.test_login_negative_wrong_password.executor": "Run",
     "Python tests.Python tests for test.test_login.TestLogin.test_login_positive.executor": "Run",
     "Python tests.Python tests for test.test_registration.TestRegistration.executor": "Run",
     "Python tests.Python tests for test.test_registration.TestRegistration.test_registration_negative_duplicate_user.executor": "Run",
@@ -74,7 +77,7 @@
       <recent name="C:\MyPythonProjects\QA88APIPhonebook" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test.test_login.TestLogin.test_login_negative">
+  <component name="RunManager" selected="Python tests.Python tests for test.test_login.TestLogin.test_login_negative_wrong_password">
     <configuration name="Python tests for test.test_login.TestLogin.test_login_negative" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
@@ -90,6 +93,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test.test_login.TestLogin.test_login_negative_wrong_password" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QA88APIPhonebook" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.test_login.TestLogin.test_login_negative_wrong_password&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test.test_login.TestLogin.test_login_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
@@ -102,21 +120,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test.test_login.TestLogin.test_login_positive&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test.test_registration.TestRegistration.test_registration_negative_duplicate_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="QA88APIPhonebook" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_registration.TestRegistration.test_registration_negative_duplicate_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -152,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test.test_login.TestLogin.test_login_negative_wrong_password" />
         <item itemvalue="Python tests.Python tests for test.test_login.TestLogin.test_login_negative" />
         <item itemvalue="Python tests.Python tests for test.test_login.TestLogin.test_login_positive" />
         <item itemvalue="Python tests.Python tests for test.test_registration.TestRegistration.test_registration_negative_invalid_email" />
         <item itemvalue="Python tests.Python tests for test.test_registration.TestRegistration.test_registration_positive" />
-        <item itemvalue="Python tests.Python tests for test.test_registration.TestRegistration.test_registration_negative_duplicate_user" />
       </list>
     </recent_temporary>
   </component>
@@ -223,13 +226,22 @@
       <option name="project" value="LOCAL" />
       <updated>1789392059977</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Login Tests Negative">
+      <option name="closed" value="true" />
+      <created>1789470119613</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1789470119613</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start project" />
     <MESSAGE value="RegistrationTests" />
     <MESSAGE value="Login Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login Tests" />
+    <MESSAGE value="Login Tests Negative" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Tests Negative" />
   </component>
 </project>

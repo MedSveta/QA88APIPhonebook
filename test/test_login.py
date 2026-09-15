@@ -18,7 +18,7 @@ class TestLogin:
         "",
         "dfrty678@rty.bn"
     ])
-    def test_login_negative(self, session, login_url, invalid_username):
+    def test_login_negative_wrong_email(self, session, login_url, invalid_username):
         body = {
             "username": invalid_username,
             "password": TEST_PASSWORD,
@@ -26,4 +26,18 @@ class TestLogin:
         response = session.post(login_url, json=body)
         print(response.json())
         assert response.status_code in [401, 403]
+        assert "Login or Password incorrect" in response.json().values()
+
+    @pytest.mark.parametrize("invalid_password", [
+        "",
+        "Qwert345!"
+    ])
+    def test_login_negative_wrong_password(self, session, login_url, invalid_password):
+        body = {
+            "username": TEST_EMAIL,
+            "password": invalid_password,
+        }
+        response = session.post(login_url, json=body)
+        print(response.json())
+        assert response.status_code == 401
         assert "Login or Password incorrect" in response.json().values()
