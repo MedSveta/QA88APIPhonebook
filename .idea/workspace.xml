@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638cedc1-5e84-47e2-838c-c3befda27ecd" name="Changes" comment="Login Tests Negative">
-      <change afterPath="$PROJECT_DIR$/models/contact_dto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_contacts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+    <list default="true" id="638cedc1-5e84-47e2-838c-c3befda27ecd" name="Changes" comment="Add New Contact">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contacts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +50,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_add_contact.executor": "Run",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_add_contact_positive.executor": "Run",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts.executor": "Run",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wo_authorization.executor": "Run",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wrong_token.executor": "Run",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_positive.executor": "Run",
     "Python tests.Python tests for test.test_login.TestLogin.test_login_negative.executor": "Run",
     "Python tests.Python tests for test.test_login.TestLogin.test_login_negative_wrong_password.executor": "Run",
     "Python tests.Python tests for test.test_login.TestLogin.test_login_positive.executor": "Run",
@@ -77,8 +81,8 @@
       <recent name="C:\MyPythonProjects\QA88APIPhonebook" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test.test_login.TestLogin.test_login_negative_wrong_password">
-    <configuration name="Python tests for test.test_login.TestLogin.test_login_negative" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_positive">
+    <configuration name="Python tests for test.test_contacts.TestContacts.test_add_contact_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,11 +93,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_login.TestLogin.test_login_negative&quot;" />
+      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_add_contact_positive&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.test_login.TestLogin.test_login_negative_wrong_password" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test.test_contacts.TestContacts.test_get_all_contacts" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,11 +108,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_login.TestLogin.test_login_negative_wrong_password&quot;" />
+      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_get_all_contacts&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.test_login.TestLogin.test_login_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wo_authorization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,11 +123,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_login.TestLogin.test_login_positive&quot;" />
+      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_get_all_contacts_negative_wo_authorization&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.test_registration.TestRegistration.test_registration_negative_invalid_email" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wrong_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,11 +138,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_registration.TestRegistration.test_registration_negative_invalid_email&quot;" />
+      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_get_all_contacts_negative_wrong_token&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.test_registration.TestRegistration.test_registration_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test.test_contacts.TestContacts.test_update_contact_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,17 +153,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_registration.TestRegistration.test_registration_positive&quot;" />
+      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_update_contact_positive&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test.test_login.TestLogin.test_login_negative_wrong_password" />
-        <item itemvalue="Python tests.Python tests for test.test_login.TestLogin.test_login_negative" />
-        <item itemvalue="Python tests.Python tests for test.test_login.TestLogin.test_login_positive" />
-        <item itemvalue="Python tests.Python tests for test.test_registration.TestRegistration.test_registration_negative_invalid_email" />
-        <item itemvalue="Python tests.Python tests for test.test_registration.TestRegistration.test_registration_positive" />
+        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_positive" />
+        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_add_contact_positive" />
+        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wo_authorization" />
+        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wrong_token" />
+        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789470119613</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add New Contact">
+      <option name="closed" value="true" />
+      <created>1789473451113</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1789473451113</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -242,6 +254,7 @@
     <MESSAGE value="RegistrationTests" />
     <MESSAGE value="Login Tests" />
     <MESSAGE value="Login Tests Negative" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login Tests Negative" />
+    <MESSAGE value="Add New Contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add New Contact" />
   </component>
 </project>
