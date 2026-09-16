@@ -33,7 +33,6 @@ class TestContacts:
         #print("Contact ID:", contact_id)
         res1 = session.get(add_contact_url, headers=auth_header)
         #print(res1.json())
-
         updated_contact = {
             "id": contact_id,
             "name": fake.name(),
@@ -43,7 +42,6 @@ class TestContacts:
             "address":"address",
             "description":"text",
         }
-
         response = session.put(add_contact_url, headers=auth_header, json=updated_contact)
        # print(response.json())
         assert response.status_code == 200
@@ -51,4 +49,6 @@ class TestContacts:
         res = session.get(add_contact_url, headers=auth_header)
         #print(res.json())
         assert res.json()["contacts"][0]["address"] == "address"
+        assert res.json()["contacts"][0]["phone"] == updated_contact["phone"]
+
 
