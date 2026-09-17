@@ -1,10 +1,12 @@
 from dataclasses import asdict
 from faker import Faker
 import random
+import pytest
 
 fake = Faker()
 
 class TestContacts:
+    @pytest.mark.smoke
     def test_add_contact_positive(self, session, add_contact_url, auth_header, random_contact):
         response = session.post(
             add_contact_url,
@@ -15,6 +17,7 @@ class TestContacts:
         assert response.status_code == 200
         assert "Contact was added!" in response.json()["message"]
 
+    @pytest.mark.smoke
     def test_get_all_contacts_positive(self, session, add_contact_url, auth_header):
         response = session.get(add_contact_url, headers=auth_header)
         print(response.json())
@@ -28,6 +31,7 @@ class TestContacts:
         assert response.status_code == 401
         assert response.json()["error"] == "Unauthorized"
 
+    @pytest.mark.smoke
     def test_update_contact_positive(self, session, add_contact_url, auth_header, create_contact):
         contact_id = create_contact
         print("Contact ID:", contact_id)
@@ -73,4 +77,14 @@ class TestContacts:
         response = session.put(add_contact_url, headers=auth_header, json=contact)
         assert response.status_code == 200
         assert "Contact was updated" in response.json()["message"]
+
+    @pytest.mark.smoke
+    def test_delete_contact_positive(self, session, add_contact_url, auth_header, create_contact):
+        contact_id = create_contact
+        response = session.delete(f"{add_contact_url}/{contact_id}", headers=auth_header)
+        print(response.json())
+        assert response.status_code == 200
+        assert "Contact was deleted!" in response.json()["message"]
+
+
 
