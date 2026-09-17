@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="638cedc1-5e84-47e2-838c-c3befda27ecd" name="Changes" comment="Update Contact">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contacts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +55,9 @@
     "Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts.executor": "Run",
     "Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wo_authorization.executor": "Run",
     "Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wrong_token.executor": "Run",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_positive.executor": "Run",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_one_field_positive.executor": "Run",
+    "Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_one_field_second_positive.executor": "Run",
     "Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_positive.executor": "Run",
     "Python tests.Python tests for test.test_login.TestLogin.test_login_negative.executor": "Run",
     "Python tests.Python tests for test.test_login.TestLogin.test_login_negative_wrong_password.executor": "Run",
@@ -62,6 +66,7 @@
     "Python tests.Python tests for test.test_registration.TestRegistration.test_registration_negative_duplicate_user.executor": "Run",
     "Python tests.Python tests for test.test_registration.TestRegistration.test_registration_negative_invalid_email.executor": "Run",
     "Python tests.Python tests for test.test_registration.TestRegistration.test_registration_positive.executor": "Run",
+    "Python.conftest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -81,7 +86,29 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_positive">
-    <configuration name="Python tests for test.test_contacts.TestContacts.test_add_contact_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QA88APIPhonebook" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conftest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.test_contacts.TestContacts.test_get_all_contacts_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,11 +119,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_add_contact_positive&quot;" />
+      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_get_all_contacts_positive&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.test_contacts.TestContacts.test_get_all_contacts" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test.test_contacts.TestContacts.test_update_contact_one_field_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,11 +134,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_get_all_contacts&quot;" />
+      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_update_contact_one_field_positive&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wo_authorization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test.test_contacts.TestContacts.test_update_contact_one_field_second_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA88APIPhonebook" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,22 +149,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_get_all_contacts_negative_wo_authorization&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wrong_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="QA88APIPhonebook" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_get_all_contacts_negative_wrong_token&quot;" />
+      <option name="_new_target" value="&quot;test.test_contacts.TestContacts.test_update_contact_one_field_second_positive&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -159,10 +171,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_positive" />
-        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_add_contact_positive" />
-        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wo_authorization" />
-        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_negative_wrong_token" />
-        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts" />
+        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_one_field_second_positive" />
+        <item itemvalue="Python.conftest" />
+        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_update_contact_one_field_positive" />
+        <item itemvalue="Python tests.Python tests for test.test_contacts.TestContacts.test_get_all_contacts_positive" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789560265421</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update Contact">
+      <option name="closed" value="true" />
+      <created>1789561863907</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1789561863907</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
