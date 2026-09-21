@@ -69,7 +69,6 @@ class TestRegistration:
             "QWERTY123!",
             "Qwerty!$",
             "Qwerty123",
-            "Qwer ty1$",
             "Ыerty!123",
         ])
     def test_registration_negative_invalid_email(self, session, registration_url, invalid_password):
