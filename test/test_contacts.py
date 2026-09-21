@@ -31,7 +31,7 @@ class TestContacts:
         print(response.json())
         assert response.status_code == 401
         assert response.json()["error"] == "Unauthorized"
-
+#
     @pytest.mark.smoke
     def test_update_contact_positive(self, session, add_contact_url, auth_header, create_contact):
         contact_id = create_contact
