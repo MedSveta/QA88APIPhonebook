@@ -5,6 +5,7 @@ from config import *
 class TestLogin:
 
     @pytest.mark.smoke
+    @pytest.mark.auth
     def test_login_positive(self, session, login_url, registered_user):
         body = {
             "username": registered_user.username,
@@ -15,6 +16,8 @@ class TestLogin:
         assert response.status_code == 200
         assert "token" in response.json().keys()
 
+    @pytest.mark.auth
+    @pytest.mark.negative
     @pytest.mark.parametrize("invalid_username", [
         "",
         "dfrty678@rty.bn"
@@ -29,6 +32,8 @@ class TestLogin:
         assert response.status_code in [401, 403]
         assert "Login or Password incorrect" in response.json().values()
 
+    @pytest.mark.auth
+    @pytest.mark.negative
     @pytest.mark.parametrize("invalid_password", [
         "",
         "Qwert345!"

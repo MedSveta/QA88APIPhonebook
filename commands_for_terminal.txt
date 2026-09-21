@@ -1,6 +1,7 @@
 pip install pytest
 pip install --upgrade pip
 pip install -r requirements.txt
+pip freeze > requirements.txt
 
 pytest
 pytest -v
@@ -11,3 +12,8 @@ pytest test_pytest.py
 pytest --version
 
 pytest -m smoke
+pytest -m smoke
+pytest -m smoke
+pytest -m smoke
+
+
